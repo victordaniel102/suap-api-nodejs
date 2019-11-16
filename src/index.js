@@ -4,11 +4,13 @@ var api = require("./lib/api");
 var SUAP = function()
 {	
     /**
-    * User token used to make requests
+    * user token to make requests
     */
     var token;
 
     /**
+    * POST request to SUAP api
+    *
     * @param string url
     * @param object body
     *
@@ -22,6 +24,8 @@ var SUAP = function()
     }
 
     /**
+    * GET request to SUAP api
+    *
     * @param string url
     *
     * @return promise response
@@ -36,6 +40,8 @@ var SUAP = function()
     }
 
     /**
+    * user antiander
+    *
     * @param string username
     * @param string password
     *
@@ -56,7 +62,7 @@ var SUAP = function()
     }
 
     /**
-    * Send SUAP user data informations
+    * send personal user data
     *
     * @return object data
     */
@@ -69,7 +75,7 @@ var SUAP = function()
     }
 
     /**
-    * Send SUAP user school years data
+    * send school years to user
     *
     * @return object data
     */
@@ -82,7 +88,7 @@ var SUAP = function()
     }
 
     /**
-    * Send SUAP user exams notes
+    * send student grades
     *
     * @param int year
     * @param int term
@@ -100,7 +106,7 @@ var SUAP = function()
     }
 
     /**
-    * Send SUAP user classes
+    * send student classes
     *
     * @param int year
     * @param int term
@@ -118,7 +124,7 @@ var SUAP = function()
     }
 
     /**
-    * Send SUAP user class (outdated)
+    * send student class (outdated)
     *
     * @param int id
     *
@@ -134,7 +140,7 @@ var SUAP = function()
     }
 
     /**
-    * Add a token value
+    * SET token value
     *
     * @param string tokenValue
     *
