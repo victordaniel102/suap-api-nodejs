@@ -156,7 +156,8 @@ var SUAP = function()
         getData,
         getYears,
         getNotes,
-        getClasses
+        getClasses,
+        setToken
     }
 }();
 
