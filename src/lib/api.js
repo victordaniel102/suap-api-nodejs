@@ -10,6 +10,6 @@ var API = function()
 	return {
 		route
 	}
-}()
+}();
 
 module.exports = API;

@@ -2,6 +2,11 @@
 	"host": "https://suap.ifrn.edu.br/api/v2/",
 	"routes": {
 		"auth": "autenticacao/token/",
-		"authKey": "autenticacao/acesso_responsaveis/"
+		"authKey": "autenticacao/acesso_responsaveis/",
+		"data": "minhas-informacoes/meus-dados/",
+		"year": "minhas-informacoes/meus-periodos-letivos/",
+		"notes": "minhas-informacoes/boletim/year/term/",
+		"classes": "minhas-informacoes/turmas-virtuais/year/term/",
+		"class": "minhas-informacoes/turmas-virtuais/id/"
 	}
 }
