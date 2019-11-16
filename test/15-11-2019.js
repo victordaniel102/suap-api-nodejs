@@ -14,4 +14,8 @@ var suap = require("../src");
 	// var _class = await suap.getClass(48553);
 
 	console.log(data, years, notes, classes);
-})();
+})()
+.catch(err => 
+{
+	console.log(err)
+});
