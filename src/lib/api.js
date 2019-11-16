@@ -3,9 +3,9 @@ var {host, routes} = require("../config.json");
 var API = function()
 {	
 	/**
-	* @param string name
+	* @param {string} name
 	*
-	* @return string route
+	* @return {string} route
 	*/
 	function route(name)
 	{

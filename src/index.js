@@ -143,10 +143,8 @@ var SUAP = function()
     * SET token value
     *
     * @param {string} tokenValue
-    *
-    * @return {object} data
     */
-    async function setToken(tokenValue)
+    function setToken(tokenValue)
     {
        token = tokenValue;
     }
