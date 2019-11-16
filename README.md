@@ -28,7 +28,11 @@ var suap = require("@suap/node-api");
   var classes = await suap.getClasses(2019, 1);
   
   console.log(data, years, notes, classes);
-})();
+})()
+.catch(err => 
+{
+	console.log(err)
+});
 ```
 
 ## 📄 Documentação
