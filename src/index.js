@@ -5,7 +5,7 @@ var api = require("./lib/api");
 * configure error handler
 */
 axios.interceptors.response.use(
-    response => response,
+    (response) => response,
     api.errorResponseHandler);
 
 
@@ -48,7 +48,7 @@ var SUAP = function()
     }
 
     /**
-    * user antiander
+    * user authenticator
     *
     * @param {string} username
     * @param {string} password

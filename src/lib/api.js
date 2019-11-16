@@ -16,9 +16,9 @@ var API = function()
 	* @param {object} error
 	*/
 	function errorResponseHandler(error)
-    {
-        throw "Error from SUAP: " + error.response.data.detail;
-    }
+	{
+		throw "Error from SUAP: " + error.response.data.detail;
+	}
 
 	return {
 		route,
