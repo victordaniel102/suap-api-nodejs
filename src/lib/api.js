@@ -12,6 +12,9 @@ var API = function()
 		return host + routes[name];
 	}
 
+	/**
+	* @param {object} error
+	*/
 	function errorResponseHandler(error)
     {
         throw "Error from SUAP: " + error.response.data.detail;
