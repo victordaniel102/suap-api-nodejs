@@ -13,5 +13,5 @@ var suap = require("../src");
 	var classes = await suap.getClasses(2019, 1);
 	// var _class = await suap.getClass(48553);
 
-	console.log(data, year, notes, classes);
+	console.log(data, years, notes, classes);
 })();
