@@ -1,8 +1,13 @@
+require('dotenv').config({path: "../.env"})
 var suap = require("../src");
 
-suap.auth("20171011110041", "Picole123@")
+// get token
+suap.auth(
+	process.env.MATRICULA, 
+	process.env.PASSWORD)
 .then(token =>
 {
-	console.log(token)
+	// console.log(token)
+	suap.getData();
 });
 
