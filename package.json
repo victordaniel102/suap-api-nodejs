@@ -1,0 +1,12 @@
+{
+  "name": "suap-api-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/victordaniel102/suap-api-nodejs",
+  "author": "CripBoy <cripboygit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1"
+  }
+}

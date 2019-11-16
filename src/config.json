@@ -1,0 +1,7 @@
+{
+	"host": "https://suap.ifrn.edu.br/api/v2/",
+	"routes": {
+		"auth": "autenticacao/token/",
+		"authKey": "autenticacao/acesso_responsaveis/"
+	}
+}
