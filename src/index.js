@@ -11,8 +11,8 @@ var SUAP = function()
     /**
     * POST request to SUAP api
     *
-    * @param string url
-    * @param object body
+    * @param {string} url
+    * @param {object} body
     *
     * @return promise response
     */
@@ -26,7 +26,7 @@ var SUAP = function()
     /**
     * GET request to SUAP api
     *
-    * @param string url
+    * @param {string} url
     *
     * @return promise response
     */
@@ -42,10 +42,10 @@ var SUAP = function()
     /**
     * user antiander
     *
-    * @param string username
-    * @param string password
+    * @param {string} username
+    * @param {string} password
     *
-    * @return string token
+    * @return {string} token
     */
     async function auth(username, password)
     {
@@ -64,7 +64,7 @@ var SUAP = function()
     /**
     * send personal user data
     *
-    * @return object data
+    * @return {object} data
     */
     async function getData()
     {
@@ -77,7 +77,7 @@ var SUAP = function()
     /**
     * send school years to user
     *
-    * @return object data
+    * @return {object} data
     */
     async function getYears()
     {
@@ -90,10 +90,10 @@ var SUAP = function()
     /**
     * send student grades
     *
-    * @param int year
-    * @param int term
+    * @param {int} year
+    * @param {int} term
     *
-    * @return object data
+    * @return {object} data
     */
     async function getNotes(year, term)
     {
@@ -108,10 +108,10 @@ var SUAP = function()
     /**
     * send student classes
     *
-    * @param int year
-    * @param int term
+    * @param {int} year
+    * @param {int} term
     *
-    * @return object data
+    * @return {object} data
     */
     async function getClasses(year, term)
     {
@@ -126,9 +126,9 @@ var SUAP = function()
     /**
     * send student class (outdated)
     *
-    * @param int id
+    * @param {int} id
     *
-    * @return object data
+    * @return {object} data
     */
     async function getClass(id)
     {
@@ -142,9 +142,9 @@ var SUAP = function()
     /**
     * SET token value
     *
-    * @param string tokenValue
+    * @param {string} tokenValue
     *
-    * @return object data
+    * @return {object} data
     */
     async function setToken(tokenValue)
     {
