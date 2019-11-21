@@ -1,6 +1,14 @@
 var axios = require("axios");
 var api = require("./lib/api");
 
+/**
+* configure error handler
+*/
+axios.interceptors.response.use(
+    (response) => response,
+    api.errorResponseHandler);
+
+
 var SUAP = function()
 {	
     /**
@@ -40,7 +48,7 @@ var SUAP = function()
     }
 
     /**
-    * user antiander
+    * user authenticator
     *
     * @param {string} username
     * @param {string} password
@@ -146,17 +154,17 @@ var SUAP = function()
     */
     function setToken(tokenValue)
     {
-       token = tokenValue;
-    }
+     token = tokenValue;
+ }
 
-    return {
-        auth,
-        getData,
-        getYears,
-        getNotes,
-        getClasses,
-        setToken
-    }
+ return {
+    auth,
+    getData,
+    getYears,
+    getNotes,
+    getClasses,
+    setToken
+}
 }();
 
 module.exports = SUAP;
