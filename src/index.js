@@ -155,7 +155,7 @@ var SUAP = function()
     function setToken(tokenValue)
     {
      token = tokenValue;
- }
+    }
 
  return {
     auth,

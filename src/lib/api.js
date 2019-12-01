@@ -13,11 +13,28 @@ var API = function()
 	}
 
 	/**
+	* @param {string} text
+	* @param {int} code
+	*
+	* @return {object} object error
+	*/
+	function createErrorResponse(text, code)
+	{
+		return {
+			"title": "Error",
+			"code": code,
+			"detail": text
+		}
+	}
+
+	/**
 	* @param {object} error
 	*/
 	function errorResponseHandler(error)
 	{
-		throw "Error from SUAP: " + error.response.data.detail;
+		var {data, status} = error.response;
+
+		throw createErrorResponse(data.detail, status);
 	}
 
 	return {
