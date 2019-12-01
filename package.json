@@ -1,13 +1,32 @@
 {
-  "name": "suap-api-nodejs",
+  "name": "suap-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/victordaniel102/suap-api-nodejs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victordaniel102/suap-api-nodejs.git"
+  },
   "author": "CripBoy <cripboygit@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1"
+  },
+  "keywords": [
+    "SUAP",
+    "IFRN",
+    "SUAP API"
+  ],
+  "description": "Este repositorio tem como objetivo ser um wrapper em nodejs da SUAP API v2, facilitando seu uso apartir da diminuição do entry point original.",
+  "bugs": {
+    "url": "https://github.com/victordaniel102/suap-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/victordaniel102/suap-api-nodejs#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
