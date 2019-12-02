@@ -5,11 +5,11 @@ Baseado em [suap-api-php](https://github.com/ivmelo/suap-api-php), este reposito
 ## Instalação
 **npm**
 
-`npm install @suap/node-api`
+`npm install suap-api`
 
 **yarn**
 
-`yarn add @suap/node-api`
+`yarn add suap-api`
 
 ## 📣 Exemplo
 Devido a quantidade de funções utilizadas ao mesmo tempo, isto pode levar alguns segundos
