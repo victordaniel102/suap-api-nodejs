@@ -14,7 +14,7 @@ Baseado em [suap-api-php](https://github.com/ivmelo/suap-api-php), este reposito
 ## 📣 Exemplo
 Devido a quantidade de funções utilizadas ao mesmo tempo, isto pode levar alguns segundos
 ```js
-var suap = require("@suap/node-api");
+var suap = require("suap-api");
 
 (async function()
 {
